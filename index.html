@@ -40,6 +40,11 @@
           <li class="navbar__menu__item">Contact</li>
         </ul>
       </div>
+
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
     </nav>
 
     <!-- Home -->
@@ -55,7 +60,7 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class ="section">
       <h1>About ME</h1>
       <p>저는 인문학을 좋아하는 공대생이자, 개발자입니다.</p>
       <div class="about__majors">
@@ -63,29 +68,29 @@
           <div class="major__icon">
             <img src="imgs/analysis.png" alt="Information System" />
           </div>
-          <div class="major__title">Information System</div>
+          <h2 class="major__title">Information System</h2>
           <div class="major__description">About Information System</div>
         </div>
         <div class="major">
           <div class="major__icon">
             <img src="imgs/website.png" alt="CSE" />
           </div>
-          <div class="major__title">
+          <h2 class="major__title">
             Computer Science & Software Engineering
-          </div>
-          <div class="major__description">
+          </h2>
+          <p class="major__description">
             Second Major in Computer Science & Software Engineering
-          </div>
+          </p>
         </div>
         <div class="major">
           <div class="major__icon">
             <img src="imgs/big-data.png" alt="Big Data" />
           </div>
-          <div class="major__title">Information System</div>
-          <div class="major__description">
+          <h2 class="major__title">Information System</h2>
+          <p class="major__description">
             Second Major in Big Data Convergence
+          </p>
           </div>
-        </div>
       </div>
       <div class="about__school">
         <div class="school">
@@ -94,14 +99,16 @@
             alt="hanyang_univ"
             class="school__logo"
           />
-          <p class="school__name">Hanyang_univ</p>
+          <div class="school__description">
+          <p class="school__name">Hanyang_Univ</p>
           <p class="school__period">2018.03 ~</p>
+        </div>
         </div>
       </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class ="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
@@ -109,46 +116,55 @@
         성격입니다.
       </p>
       <div class="skillset">
-        <div class="skillset_left">
+        <div class="skillset__left">
           <h3 class="skillset__title">Skills</h3>
           <div class="skill">
-            <div class="skill_description">
+            <div class="skill__description">
               <span>HTML</span>
               <span>99%</span>
             </div>
-            <div class="skill_bar">
-              <div class="skill_value"></div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 99%;"></div>
             </div>
           </div>
           <div class="skill">
-            <div class="skill_description">
+            <div class="skill__description">
               <span>CSS</span>
-              <span>95%</span>
+              <span>80%</span>
             </div>
-            <div class="skill_bar">
-              <div class="skill_value"></div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%;"></div>
             </div>
           </div>
           <div class="skill">
-            <div class="skill_description">
+            <div class="skill__description">
               <span>JavaScript</span>
               <span>90%</span>
             </div>
-            <div class="skill_bar">
-              <div class="skill_value"></div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 90%;"></div>
             </div>
           </div>
           <div class="skill">
-            <div class="skill_description">
+            <div class="skill__description">
               <span>REACT</span>
               <span>85%</span>
             </div>
-            <div class="skill_bar">
-              <div class="skill_value"></div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>Nodejs</span>
+              <span>70%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 70%;"></div>
             </div>
           </div>
         </div>
-        <div class="skillset_right">
+        <div class="skillset__right">
           <div class="tools">
             <h3 class="skillset__title">Tools</h3>
             <ul class="tools__list">
@@ -172,148 +188,153 @@
     </section>
 
     <!-- Work -->
-    <section id="work">
-      <h1>My work</h1>
-      <h3>Projects</h3>
-      <div class="work__categories">
-        <button class="category__btn">
-          All<span class="category__count">8</span>
-        </button>
-        <button class="category__btn">
-          Front-end<span class="category__count">3</span>
-        </button>
-        <button class="category__btn">
-          Back-end<span class="category__count">3</span>
-        </button>
-        <button class="category__btn">
-          Mobile<span class="category__count">2</span>
-        </button>
+    <section id="work" class ="section">
+ <div class="section__container">
+  <h1>My work</h1>
+  <h3>Projects</h3>
+  <div class="work__categories">
+    <button class="category__btn active">
+      All<span class="category__count">8</span>
+    </button>
+    <button class="category__btn ">
+      Front-end<span class="category__count">3</span>
+    </button>
+    <button class="category__btn ">
+      Back-end<span class="category__count">3</span>
+    </button>
+    <button class="category__btn">
+      Mobile<span class="category__count">2</span>
+    </button>
+  </div>
+  <div class="work__projects">
+    <a href="" class="project" target="blank">
+      <img
+        src="imgs/projects/project1.png"
+        class="project__img"
+        alt="project1"
+      />
+      <div class="project__description">
+        <h3>Project1</h3>
+        <span>Clone coding1</span>
       </div>
-
-      <div class="work__projects">
-        <a href="" class="project" target="blank">
-          <img
-            src="imgs/projects/project1.png"
-            class="project__img"
-            alt="project1"
-          />
-          <div class="project__description">
-            <h3>Project1</h3>
-            <span>Clone coding1</span>
-          </div>
-        </a>
-        <a href="" class="project" target="blank">
-          <img
-            src="imgs/projects/project2.png"
-            class="project__img"
-            alt="project2"
-          />
-          <div class="project__description">
-            <h3>Project2</h3>
-            <span>Clone coding2</span>
-          </div>
-        </a>
-        <a href="" class="project" target="blank">
-          <img
-            src="imgs/projects/project3.png"
-            class="project__img"
-            alt="project3"
-          />
-          <div class="project__description">
-            <h3>Project3</h3>
-            <span>Clone coding3</span>
-          </div>
-        </a>
-        <a href="" class="project" target="blank">
-          <img
-            src="imgs/projects/project4.png"
-            class="project__img"
-            alt="project4"
-          />
-          <div class="project__description">
-            <h3>Project4</h3>
-            <span>Clone coding4</span>
-          </div>
-        </a>
-        <a href="" class="project" target="blank">
-          <img
-            src="imgs/projects/project5.png"
-            class="project__img"
-            alt="project5"
-          />
-          <div class="project__description">
-            <h3>Project5</h3>
-            <span>Clone coding5</span>
-          </div>
-        </a>
-        <a href="" class="project" target="blank">
-          <img
-            src="imgs/projects/project6.png"
-            class="project__img"
-            alt="project6"
-          />
-          <div class="project__description">
-            <h3>Project6</h3>
-            <span>Clone coding6</span>
-          </div>
-        </a>
-        <a href="" class="project" target="blank">
-          <img
-            src="imgs/projects/project7.png"
-            class="project__img"
-            alt="project7"
-          />
-          <div class="project__description">
-            <h3>Project7</h3>
-            <span>Clone coding7</span>
-          </div>
-        </a>
-        <a href="" class="project" target="blank">
-          <img
-            src="imgs/projects/project8.png"
-            class="project__img"
-            alt="project8"
-          />
-          <div class="project__description">
-            <h3>Project8</h3>
-            <span>Clone coding</span>
-          </div>
-        </a>
+    </a>
+    <a href="" class="project" target="blank">
+      <img
+        src="imgs/projects/project2.png"
+        class="project__img"
+        alt="project2"
+      />
+      <div class="project__description">
+        <h3>Project2</h3>
+        <span>Clone coding2</span>
       </div>
+    </a>
+    <a href="" class="project" target="blank">
+      <img
+        src="imgs/projects/project3.png"
+        class="project__img"
+        alt="project3"
+      />
+      <div class="project__description">
+        <h3>Project3</h3>
+        <span>Clone coding3</span>
+      </div>
+    </a>
+    <a href="" class="project" target="blank">
+      <img
+        src="imgs/projects/project4.png"
+        class="project__img"
+        alt="project4"
+      />
+      <div class="project__description">
+        <h3>Project4</h3>
+        <span>Clone coding4</span>
+      </div>
+    </a>
+    <a href="" class="project" target="blank">
+      <img
+        src="imgs/projects/project5.png"
+        class="project__img"
+        alt="project5"
+      />
+      <div class="project__description">
+        <h3>Project5</h3>
+        <span>Clone coding5</span>
+      </div>
+    </a>
+    <a href="" class="project" target="blank">
+      <img
+        src="imgs/projects/project6.png"
+        class="project__img"
+        alt="project6"
+      />
+      <div class="project__description">
+        <h3>Project6</h3>
+        <span>Clone coding6</span>
+      </div>
+    </a>
+    <a href="" class="project" target="blank">
+      <img
+        src="imgs/projects/project7.png"
+        class="project__img"
+        alt="project7"
+      />
+      <div class="project__description">
+        <h3>Project7</h3>
+        <span>Clone coding7</span>
+      </div>
+    </a>
+    <a href="" class="project" target="blank">
+      <img
+        src="imgs/projects/project8.png"
+        class="project__img"
+        alt="project8"
+      />
+      <div class="project__description">
+        <h3>Project8</h3>
+        <span>Clone coding</span>
+      </div>
+    </a>
+  </div>
+ </div>
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials">
-      <h1>Testimonials</h1>
-      <h3>See what they say about me</h3>
-      <div class="testinonials">
-        <div class="testimonial">
-          <img
-            src="imgs/testimonial/people1.jpg"
-            alt="people"
-            class="testimonial__avatar"
-          />
-          <div class="testimonial__speech-bubble">
-            <p>Best</p>
-            <p class="name"><a href="">Ellie</a> / Samsung</p>
-          </div>
-        </div>
-        <div class="testimonial">
-          <img
-            src="imgs/testimonial/people1.jpg"
-            alt="people"
-            class="testimonial__avatar"
-          />
-          <div class="testimonial__speech-bubble">
-            <p>Best</p>
-            <p class="name"><a href="">Ellie</a> / Samsung</p>
-          </div>
-        </div>
+    <section id="testimonials" class ="section">
+<div class="section__container">
+  <h1>Testimonials</h1>
+  <h3>See what they say about me</h3>
+  <div class="testimonials">
+    <div class="testimonial">
+      <img
+        src="imgs/testimonial/people1.jpg"
+        alt="people"
+        class="testimonial__avatar"
+      />
+      <div class="testimonial__speech-bubble">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga libero nulla eveniet aperiam laborum, quis provident quibusdam officiis reprehenderit, placeat neque perspiciatis vero explicabo tempora, dignissimos accusantium inventore ducimus! 
+        </p>
+        <p class="name"><a href="">Ellie</a> / Samsung</p>
       </div>
-    </section>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial__speech-bubble">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga libero nulla eveniet aperiam laborum, quis provident quibusdam officiis reprehenderit, placeat neque perspiciatis vero explicabo tempora, dignissimos accusantium inventore ducimus! 
+        </p>
+        <p class="name"><a href="">Ellie</a> / Samsung</p>
+      </div>
+      <img
+      src="imgs/testimonial/people1.jpg"
+      alt="people"
+      class="testimonial__avatar"
+    />
+    </div>
+  </div>
+</div>
+</section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class ="section">
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">rlawlsgh1111@naver.com</h2>
       <div class="contact__links">
@@ -324,7 +345,7 @@
           <i class="fa fa-linkedin-square"></i>
         </a>
       </div>
-      <p class="contact__right">2020 JinHo - All rights reserved</p>
+      <p class="contact__rights">2021 JinHo, KIM - All rights reserved</p>
     </section>
   </body>
 </html>
