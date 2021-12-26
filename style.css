@@ -104,6 +104,7 @@ p {
   padding: 16px;
   background-color: transparent;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -228,7 +229,7 @@ p {
 
 .school {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .school__description {
@@ -269,6 +270,7 @@ p {
 
 .skillset__title {
   color: var(--color-white);
+  font-weight: bolder;
 }
 .skillset__left {
   flex-basis: 60%;
